@@ -1,11 +1,12 @@
 class WifiInfo {
   String _bssid = "missing";
   String _ssid = "missing";
-  int _ip = 0;
+  String _ip = "missing";
   String _macAddress = "missing";
   int _linkSpeed = 0;
   int _singalStrength = 0;
   int _frequency = 0;
+  int _channel = 0;
   int _networkid = 0;
   String _connectionType = "missing";
   bool _isHiddenSSID = false;
@@ -22,6 +23,7 @@ class WifiInfo {
       this._linkSpeed = nativeInfo["LINKSPEED"];
       this._singalStrength = nativeInfo["SIGNALSTRENGTH"];
       this._frequency = nativeInfo["FREQUENCY"];
+      this._channel = nativeInfo["CHANNEL"];
       this._networkid = nativeInfo["NETWORKID"];
       this._connectionType = nativeInfo["CONNECTIONTYPE"];
       this._isHiddenSSID = nativeInfo["ISHIDDEDSSID"];
@@ -30,7 +32,7 @@ class WifiInfo {
   }
 
   /// IPV4 address for connected device
-  int get ipAddress {
+  String get ipAddress {
     return this._ip;
   }
 
@@ -61,6 +63,10 @@ class WifiInfo {
 
   int get frequency {
     return this._frequency;
+  }
+
+  int get channel {
+    return this._channel;
   }
 
   int get networkId {
