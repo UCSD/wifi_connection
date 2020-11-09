@@ -8,7 +8,6 @@ class WifiInfo {
   int _frequency = 0;
   int _channel = 0;
   int _networkid = 0;
-  String _connectionType = "missing";
   bool _isHiddenSSID = false;
   String _routerIp = "unknown";
 
@@ -25,7 +24,6 @@ class WifiInfo {
       this._frequency = nativeInfo["FREQUENCY"];
       this._channel = nativeInfo["CHANNEL"];
       this._networkid = nativeInfo["NETWORKID"];
-      this._connectionType = nativeInfo["CONNECTIONTYPE"];
       this._isHiddenSSID = nativeInfo["ISHIDDEDSSID"];
       this._routerIp = nativeInfo["ROUTERIP"];
     }
@@ -71,11 +69,6 @@ class WifiInfo {
 
   int get networkId {
     return this._networkid;
-  }
-
-  /// returns connection type eg wifi or mobile
-  String get connectionType {
-    return this._connectionType;
   }
 
   bool get isHiddenSSid {

@@ -62,7 +62,6 @@ class _MyAppState extends State<MyApp> {
               Text('Frequency: ${_wifiInfo.frequency}\n'),
               Text('Channel: ${_wifiInfo.channel}\n'),
               Text('Network Id: ${_wifiInfo.networkId}\n'),
-              Text('Connection Type: ${_wifiInfo.connectionType}\n'),
               Text('IsHiddenSSID: ${_wifiInfo.isHiddenSSid}\n'),
               Text('Router IP: ${_wifiInfo.routerIp}\n'),
               FlatButton(
