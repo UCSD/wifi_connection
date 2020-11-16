@@ -12,10 +12,4 @@
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   [SwiftWifiConnectionPlugin registerWithRegistrar:registrar];
 }
-- (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
-  
-   
-}
-
-
 @end

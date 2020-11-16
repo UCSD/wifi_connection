@@ -11,9 +11,11 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    getWifiInfo(result: result)
+    if call.method.elementsEqual("getWifiInfo"){
+        getWifiInfo(result: result)
+    }
   }
-    public func getWifiInfo(result: FlutterResult){
+    private func getWifiInfo(result: FlutterResult){
         var map: Dictionary<String, String> = [:]
         let interfaces = CNCopySupportedInterfaces() as! [String]
         for interface in interfaces{
