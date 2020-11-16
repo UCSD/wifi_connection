@@ -22,7 +22,7 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
             if let interfaceInfo = CNCopyCurrentNetworkInfo(interface as CFString) as NSDictionary? {
                          let ssid = interfaceInfo[kCNNetworkInfoKeySSID as String] as? String
                 let bssid = interfaceInfo[kCNNetworkInfoKeyBSSID as String]
-            
+
                 map["SSID"] = ssid!
                 map["BSSID"] = bssid! as? String
                 map["IP"] = getAddress(for: Network.wifi)!
@@ -31,7 +31,7 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
                 map["SIGNALSTRENGTH"] = ""
                 map["FREQUENCY"] = ""
                 map["NETWORKID"] = ""
-                map["ISHIDDEDSSID"] = ""
+                map["ISHIDDENSSID"] = "false"
                 map["ROUTERIP"] = ""
                 map["CHANNEL"] = ""
                 result(map)
@@ -39,9 +39,9 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
                       }
 
         }
-        
+
     }
-    
+
     enum Network: String {
         case wifi = "en0"
         case cellular = "pdp_ip0"
@@ -81,7 +81,7 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
 
         return address
     }
-    
+
     let locationManager = CLLocationManager()
     var networkType: String
 
