@@ -11,7 +11,7 @@ import SystemConfiguration.CaptiveNetwork
   ) -> Bool {
     
     let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
-    let wifiChannel = FlutterMethodChannel(name: "ucsd.campusMobile/networkDiagnostics",
+    let wifiChannel = FlutterMethodChannel(name: "WifiConnection",
                                               binaryMessenger: controller.binaryMessenger)
     wifiChannel.setMethodCallHandler({
       (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in
@@ -20,7 +20,7 @@ import SystemConfiguration.CaptiveNetwork
             return
           }
           self.getWifiInfo(result: result)
-
+ 
     })
     
     GeneratedPluginRegistrant.register(with: self)
