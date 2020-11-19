@@ -3,12 +3,12 @@ class WifiInfo {
   String _ssid = "missing";
   String _ip = "missing";
   String _macAddress = "missing";
-  int _linkSpeed = 0;
-  int _singalStrength = 0;
-  int _frequency = 0;
-  int _channel = 0;
-  int _networkid = 0;
-  bool _isHiddenSSID = false;
+  String _linkSpeed = "";
+  String _singalStrength = "";
+  String _frequency ="";
+  String _channel = "";
+  String _networkid = "";
+  String _isHiddenSSID = "false";
   String _routerIp = "unknown";
 
   WifiInfo();
@@ -51,27 +51,27 @@ class WifiInfo {
     return this._macAddress;
   }
 
-  int get linkSpeed {
+  String get linkSpeed {
     return this._linkSpeed;
   }
 
-  int get signalStrength {
+  String get signalStrength {
     return this._singalStrength;
   }
 
-  int get frequency {
+  String get frequency {
     return this._frequency;
   }
 
-  int get channel {
+  String get channel {
     return this._channel;
   }
 
-  int get networkId {
+  String get networkId {
     return this._networkid;
   }
 
-  bool get isHiddenSSid {
+  String get isHiddenSSid {
     return this._isHiddenSSID;
   }
 }
