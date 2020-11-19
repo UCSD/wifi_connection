@@ -60,17 +60,17 @@ class WifiConnectionPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, Plu
           ActivityCompat.requestPermissions(currentActivity!!, arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), myPermissionCode);
       }
 
-      data["SSID"] = wifiInfo.ssid
-      data["BSSID"] = wifiInfo.bssid
+      data["SSID"] = wifiInfo.ssid.toString()
+      data["BSSID"] = wifiInfo.bssid.toString()
       data["IP"] = formatIP(wifiInfo.ipAddress)
-      data["MACADDRESS"] = wifiInfo.macAddress
-      data["LINKSPEED"] = wifiInfo.linkSpeed
-      data["SIGNALSTRENGTH"] = wifiInfo.rssi
-      data["FREQUENCY"] = wifiInfo.frequency
-      data["NETWORKID"] = wifiInfo.networkId
-      data["ISHIDDEDSSID"] = wifiInfo.hiddenSSID
+      data["MACADDRESS"] = wifiInfo.macAddress.toString()
+      data["LINKSPEED"] = wifiInfo.linkSpeed.toString()
+      data["SIGNALSTRENGTH"] = wifiInfo.rssi.toString()
+      data["FREQUENCY"] = wifiInfo.frequency.toString()
+      data["NETWORKID"] = wifiInfo.networkId.toString()
+      data["ISHIDDEDSSID"] = wifiInfo.hiddenSSID.toString()
       data["ROUTERIP"] = routerIp
-      data["CHANNEL"] = convertFrequencyToChannel(wifiInfo.frequency)
+      data["CHANNEL"] = convertFrequencyToChannel(wifiInfo.frequency).toString()
     return data
   }
 
