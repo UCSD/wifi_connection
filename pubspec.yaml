@@ -1,5 +1,5 @@
-name: WifiConnection
-description: A new flutter plugin project.
+name: wifi_connection
+description: Flutter plugin to get Wifi Connection Info
 version: 0.0.1
 author:
 homepage:
