@@ -3,12 +3,10 @@
 # Run `pod lib lint WifiConnection.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'WifiConnection'
+  s.name             = 'wifi_connection'
   s.version          = '0.0.1'
   s.summary          = 'A new flutter plugin project.'
-  s.description      = <<-DESC
-A new flutter plugin project.
-                       DESC
+  s.description      = 'A new flutter project'
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
