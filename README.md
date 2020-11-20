@@ -19,8 +19,8 @@ channel|:heavy_check_mark:|:x:
 
 ## Usage
 ```dart
-import 'package:WifiConnection/WifiConnection.dart';  
-import 'package:WifiConnection/WifiInfo.dart';
+import 'package:wifi_connection/WifiConnection.dart';
+import 'package:wifi_connection/WifiInfo.dart';
 
 WifiInfo _wifiInfo = WifiInfo();
 _wifiInfo = await WifiConnection.wifiInfo;
