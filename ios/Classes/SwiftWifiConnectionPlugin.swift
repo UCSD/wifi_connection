@@ -6,7 +6,7 @@ import SystemConfiguration.CaptiveNetwork
 public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "WifiConnection", binaryMessenger: registrar.messenger())
-    let instance = SwiftWifiConnectionPlugin(networkType: Network.wifi.rawValue)
+    let instance = SwiftWifiConnectionPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
@@ -85,8 +85,8 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
     let locationManager = CLLocationManager()
     var networkType: String
 
-    init(networkType: String){
-        self.networkType = networkType
+    override init(){
+        self.networkType = Network.wifi.rawValue
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         locationManager.pausesLocationUpdatesAutomatically = false
