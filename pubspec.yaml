@@ -1,6 +1,6 @@
 name: wifi_connection
 description: Flutter plugin to get Wifi Connection Info
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/i8wu/WifiConnection
 
 environment:
