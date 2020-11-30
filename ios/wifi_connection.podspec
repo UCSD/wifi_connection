@@ -4,9 +4,9 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'wifi_connection'
-  s.version          = '0.0.1'
-  s.summary          = 'A new flutter plugin project.'
-  s.description      = 'A new flutter project'
+  s.version          = '0.0.2'
+  s.summary          = 'A new flutter plugin to gather wifi network data.'
+  s.description      = 'A flutter plugin to help analyze wifi connections on iOS and Android devices'
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }

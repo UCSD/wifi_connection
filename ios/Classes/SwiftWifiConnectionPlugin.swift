@@ -48,6 +48,8 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
         case ipv4 = "ipv4"
         case ipv6 = "ipv6"
     }
+
+// Using https://stackoverflow.com/questions/30748480/swift-get-devices-wifi-ip-address
     func getAddress(for network: Network) -> String? {
         var address: String?
 
