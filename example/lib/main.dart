@@ -51,26 +51,24 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Column(
-            children: [
-              Text('SSID: ${_wifiInfo.ssid}\n'),
-              Text('BSSID: ${_wifiInfo.bssId}\n'),
-              Text('IP: ${_wifiInfo.ipAddress}\n'),
-              Text('MAC Address: ${_wifiInfo.macAddress}\n'),
-              Text('Link Speed: ${_wifiInfo.linkSpeed}\n'),
-              Text('Signal Strength: ${_wifiInfo.signalStrength}\n'),
-              Text('Frequency: ${_wifiInfo.frequency}\n'),
-              Text('Channel: ${_wifiInfo.channel}\n'),
-              Text('Network Id: ${_wifiInfo.networkId}\n'),
-              Text('IsHiddenSSID: ${_wifiInfo.isHiddenSSid}\n'),
-              Text('Router IP: ${_wifiInfo.routerIp}\n'),
-              FlatButton(
+          child: Column(children: [
+            Text('SSID: ${_wifiInfo.ssid}\n'),
+            Text('BSSID: ${_wifiInfo.bssid}\n'),
+            Text('IP: ${_wifiInfo.ipAddress}\n'),
+            Text('MAC Address: ${_wifiInfo.macAddress}\n'),
+            Text('Link Speed: ${_wifiInfo.linkSpeed}\n'),
+            Text('Signal Strength: ${_wifiInfo.signalStrength}\n'),
+            Text('Frequency: ${_wifiInfo.frequency}\n'),
+            Text('Channel: ${_wifiInfo.channel}\n'),
+            Text('Network Id: ${_wifiInfo.networkId}\n'),
+            Text('IsHiddenSSID: ${_wifiInfo.isHiddenSSID}\n'),
+            Text('Router IP: ${_wifiInfo.routerIp}\n'),
+            TextButton(
                 onPressed: () {
                   initPlatformState();
                 },
                 child: Text('Refresh'))
-            ]
-          ),
+          ]),
         ),
       ),
     );

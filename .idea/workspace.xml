@@ -5,21 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3f79de5-ce21-4371-85a7-399661cfc5c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Runner.entitlements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WifiConnection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WifiConnection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftWifiConnectionPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftWifiConnectionPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/WifiConnection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/WifiConnection.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/WifiInfo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/WifiInfo.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/WifiConnection_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/WifiConnection_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="FA7CV1A00447" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -42,20 +51,8 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -75,23 +72,21 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="397" y="196" key="SettingsEditor" timestamp="1604938909274">
+    <state x="684" y="305" key="FileChooserDialogImpl" timestamp="1618241474204">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="397" y="196" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1604938909274" />
-    <state x="548" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1605249464788">
-      <screen x="0" y="25" width="1792" height="1003" />
+    <state x="684" y="305" key="FileChooserDialogImpl/0.0.1792.1120@0.0.1792.1120" timestamp="1618241474204" />
+    <state x="397" y="196" key="SettingsEditor" timestamp="1618238092181">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="548" y="389" key="com.intellij.ide.util.TipDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1605171065660" />
-    <state x="548" y="373" key="com.intellij.ide.util.TipDialog/0.25.1792.1003@0.25.1792.1003" timestamp="1605249464788" />
+    <state x="397" y="196" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1618238092181" />
   </component>
 </project>

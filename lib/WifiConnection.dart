@@ -10,7 +10,7 @@ class WifiConnection {
       const MethodChannel('WifiConnection');
 
   static Future<WifiInfo> get wifiInfo async {
-    final Map<dynamic, dynamic> data = await _channel.invokeMethod('getWifiInfo');
+    final Map<dynamic, dynamic>? data = await _channel.invokeMethod('getWifiInfo');
     WifiInfo wifiInfo = new WifiInfo.withMap(data);
     return wifiInfo;
   }

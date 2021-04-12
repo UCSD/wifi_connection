@@ -1,22 +1,22 @@
 PODS:
   - Flutter (1.0.0)
-  - WifiConnection (0.0.1):
+  - wifi_connection (0.0.2):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - WifiConnection (from `.symlinks/plugins/WifiConnection/ios`)
+  - wifi_connection (from `.symlinks/plugins/wifi_connection/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  WifiConnection:
-    :path: ".symlinks/plugins/WifiConnection/ios"
+  wifi_connection:
+    :path: ".symlinks/plugins/wifi_connection/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  WifiConnection: ae9ab63ba19b81edbf15d0e03511d510f3fd987f
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  wifi_connection: cbd6d42bbd0cb9302ea325efe5bd3945576266cc
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
-COCOAPODS: 1.10.0.beta.2
+COCOAPODS: 1.10.0
