@@ -4,3 +4,6 @@
 
 ## 0.0.2
 * iOS implementation updated. 
+
+## 0.0.3
+* Migrated to null safety.
