@@ -1,19 +1,23 @@
 class WifiInfo {
-  String _bssid = "missing";
-  String _ssid = "missing";
-  String _ip = "missing";
-  String _macAddress = "missing";
-  String _linkSpeed = "";
-  String _singalStrength = "";
-  String _frequency ="";
-  String _channel = "";
-  String _networkid = "";
-  String _isHiddenSSID = "false";
-  String _routerIp = "unknown";
+  String? _bssid = "missing";
+  String? _ssid = "missing";
+  String? _ip = "missing";
+  String? _macAddress = "missing";
+  String? _linkSpeed = "";
+  String? _singalStrength = "";
+  String? _frequency = "";
+  String? _channel = "";
+  String? _networkid = "";
+  String? _isHiddenSSID = "false";
+  String? _routerIp = "unknown";
 
   WifiInfo();
 
-  WifiInfo.withMap(Map<dynamic, dynamic> nativeInfo) {
+  /*
+   * Associate variables w/ naming in map from native platforms.
+   * Parameter passed in by native platforms
+   */
+  WifiInfo.withMap(Map<dynamic, dynamic>? nativeInfo) {
     if (nativeInfo != null) {
       this._bssid = nativeInfo["BSSID"];
       this._ssid = nativeInfo["SSID"];
@@ -24,54 +28,64 @@ class WifiInfo {
       this._frequency = nativeInfo["FREQUENCY"];
       this._channel = nativeInfo["CHANNEL"];
       this._networkid = nativeInfo["NETWORKID"];
-      this._isHiddenSSID = nativeInfo["ISHIDDEDSSID"];
+      this._isHiddenSSID = nativeInfo["ISHIDDENSSID"];
       this._routerIp = nativeInfo["ROUTERIP"];
     }
   }
 
+  /// iOS and Android
   /// IPV4 address for connected device
-  String get ipAddress {
+  String? get ipAddress {
     return this._ip;
   }
 
+  /// Android only
   /// IPV4 address for router of the connected device
-  String get routerIp {
+  String? get routerIp {
     return this._routerIp;
   }
 
-  String get bssId {
+  // iOS and Android
+  String? get bssid {
     return this._bssid;
   }
 
-  String get ssid {
+  // iOS and Android
+  /// Network name
+  String? get ssid {
     return this._ssid;
   }
-
-  String get macAddress {
+  // iOS and Android
+  String? get macAddress {
     return this._macAddress;
   }
 
-  String get linkSpeed {
+  /// Android only
+  String? get linkSpeed {
     return this._linkSpeed;
   }
 
-  String get signalStrength {
+  /// Android only
+  String? get signalStrength {
     return this._singalStrength;
   }
 
-  String get frequency {
+  /// Android only
+  String? get frequency {
     return this._frequency;
   }
 
-  String get channel {
+  /// Android only
+  String? get channel {
     return this._channel;
   }
-
-  String get networkId {
+  /// Android only
+  String? get networkId {
     return this._networkid;
   }
 
-  String get isHiddenSSid {
+  /// iOS and Android
+  String? get isHiddenSSID {
     return this._isHiddenSSID;
   }
 }

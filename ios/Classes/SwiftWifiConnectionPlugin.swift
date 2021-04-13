@@ -17,7 +17,7 @@ public class SwiftWifiConnectionPlugin: NSObject, FlutterPlugin {
   }
     private func getWifiInfo(result: FlutterResult){
         var map: Dictionary<String, String> = [:]
-        let interfaces = CNCopySupportedInterfaces() as! [String]
+        let interfaces = CNCogit pySupportedInterfaces() as! [String]
         for interface in interfaces{
             if let interfaceInfo = CNCopyCurrentNetworkInfo(interface as CFString) as NSDictionary? {
                          let ssid = interfaceInfo[kCNNetworkInfoKeySSID as String] as? String
