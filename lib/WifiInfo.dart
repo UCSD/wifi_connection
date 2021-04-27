@@ -55,6 +55,7 @@ class WifiInfo {
   String? get ssid {
     return this._ssid;
   }
+
   // iOS and Android
   String? get macAddress {
     return this._macAddress;
@@ -79,6 +80,7 @@ class WifiInfo {
   String? get channel {
     return this._channel;
   }
+
   /// Android only
   String? get networkId {
     return this._networkid;

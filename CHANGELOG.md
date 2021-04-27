@@ -7,3 +7,6 @@
 
 ## 0.0.3
 * Migrated to null safety.
+
+## 0.0.4
+* Resolved build crash.

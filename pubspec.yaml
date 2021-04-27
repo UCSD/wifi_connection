@@ -1,6 +1,6 @@
 name: wifi_connection
-description: Flutter plugin to get Wifi Connection Info
-version: 0.0.3
+description: Flutter plugin to get network statistics for iOS and Android
+version: 0.0.4
 homepage: https://github.com/UCSD/wifi_connection.git
 
 environment:
