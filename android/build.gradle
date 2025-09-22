@@ -26,6 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 29
+    namespace = "edu.ucsd.WifiConnection"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
