@@ -1,4 +1,4 @@
-name: WifiConnection_example
+name: wifi_connection_example
 description: Demonstrates how to use the WifiConnection plugin.
 
 # The following line prevents the package from being accidentally published to
