@@ -10,6 +10,8 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -30,7 +32,7 @@ class _MyAppState extends State<MyApp> {
     try {
       wifiInfo = await WifiConnection.wifiInfo;
     } on PlatformException {
-      wifiInfo = null;
+      wifiInfo = WifiInfo();
     }
 
     // If the widget was removed from the tree while the asynchronous platform
