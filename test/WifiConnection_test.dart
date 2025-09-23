@@ -9,6 +9,9 @@ void main() {
 
   setUp(() {
     channel.setMockMethodCallHandler((MethodCall methodCall) async {
+      print('Mock method called: ${methodCall.method}');
+      print('Mock method arguments: ${methodCall.arguments}');
+      print('Mock returning: "42"');
       return '42';
     });
   });
@@ -18,6 +21,11 @@ void main() {
   });
 
   test('getWifiInfo', () async {
-    expect(await WifiConnection.wifiInfo, '42');
+    print('Starting getWifiInfo test...');
+    final result = await WifiConnection.wifiInfo;
+    print('WifiConnection.wifiInfo returned: $result');
+    print('Expected: "42"');
+    expect(result, '42');
+    print('Test passed!');
   });
 }
