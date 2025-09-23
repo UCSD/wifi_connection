@@ -7,17 +7,33 @@ void main() {
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  // setUp(() {
+  //   channel.setMockMethodCallHandler((MethodCall methodCall) async {
+  //     return '42';
+  //   });
+  // });
+
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(
+      channel,
+      (MethodCall methodCall) async {
+        return <String, dynamic>{'LINKSPEED': '42'};
+      },
+    );
   });
 
+  // tearDown(() {
+  //   channel.setMockMethodCallHandler(null);
+  // });
+
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(channel, null);
   });
 
   test('getWifiInfo', () async {
-    expect(await WifiConnection.wifiInfo, '42');
+    final wifiInfo = await WifiConnection.wifiInfo;
+    expect(wifiInfo.linkSpeed, '42');
   });
 }

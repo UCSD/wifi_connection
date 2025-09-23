@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import 'package:flutter/services.dart';
 import 'package:wifi_connection/WifiConnection.dart';
 import 'package:wifi_connection/WifiInfo.dart';
@@ -30,7 +29,7 @@ class _MyAppState extends State<MyApp> {
     try {
       wifiInfo = await WifiConnection.wifiInfo;
     } on PlatformException {
-      wifiInfo = null;
+      wifiInfo = WifiInfo();
     }
 
     // If the widget was removed from the tree while the asynchronous platform
