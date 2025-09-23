@@ -24,8 +24,6 @@ void main() {
     print('Starting getWifiInfo test...');
     final result = await WifiConnection.wifiInfo;
     print('WifiConnection.wifiInfo returned: $result');
-    print('Expected: "42"');
     expect(result, '42');
-    print('Test passed!');
   });
 }
